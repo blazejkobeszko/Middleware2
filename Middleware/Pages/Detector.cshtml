@@ -1,0 +1,10 @@
+﻿@page
+@model Middleware.Pages.DetectorModel
+@{
+}
+@inject Shyjus.BrowserDetection.IBrowserDetector browserDetector
+
+<h2> @browserDetector.Browser.Name </h2>
+<h3> @browserDetector.Browser.Version </h3>
+<h3> @browserDetector.Browser.OS </h3>
+<h3> @browserDetector.Browser.DeviceType </h3>
